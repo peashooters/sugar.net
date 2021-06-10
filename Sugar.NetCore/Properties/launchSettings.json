@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Sugar.NetCore": {
+      "commandName": "Project"
+    }
+  }
+}

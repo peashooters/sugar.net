@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sugar.NetCore", "Sugar.NetCore\Sugar.NetCore.csproj", "{5C5C884E-DC9F-471D-B461-FD82CD88D545}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sugar.NetCore.NetCoreUnit", "Sugar.NetCore.NetCoreUnit\Sugar.NetCore.NetCoreUnit.csproj", "{9BDCB890-CB23-46FA-A4DA-7A86D7A40F63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sugar.NetCore.NetUnit", "Sugar.NetCore.NetUnit\Sugar.NetCore.NetUnit.csproj", "{81B8C218-5B0C-42F6-8C83-6A51F1A6E793}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C5C884E-DC9F-471D-B461-FD82CD88D545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5C884E-DC9F-471D-B461-FD82CD88D545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5C884E-DC9F-471D-B461-FD82CD88D545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5C884E-DC9F-471D-B461-FD82CD88D545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BDCB890-CB23-46FA-A4DA-7A86D7A40F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BDCB890-CB23-46FA-A4DA-7A86D7A40F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BDCB890-CB23-46FA-A4DA-7A86D7A40F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BDCB890-CB23-46FA-A4DA-7A86D7A40F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B8C218-5B0C-42F6-8C83-6A51F1A6E793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B8C218-5B0C-42F6-8C83-6A51F1A6E793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B8C218-5B0C-42F6-8C83-6A51F1A6E793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B8C218-5B0C-42F6-8C83-6A51F1A6E793}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {7D6E2A1E-10C8-4693-A1A9-C60C9ED794E4}
+	EndGlobalSection
+EndGlobal
