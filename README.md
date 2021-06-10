@@ -1,7 +1,7 @@
 
 # Sugar.NetCore(中文文档)
 
-# 概述
+## 概述
 
 > Sugar.NetCore是一个基于.NET Standard规范实现的工具类库，内部主要集成一些工具类（帮助类）、语法糖扩展代码，旨在替换繁琐的编程工具类库的编写。本项目在 [ZHI.ZSystem](https://github.com/peashooters/zhi)组件类库的基础上，做了更多的编程习惯上的思考，后续会加大更新力度，希望.NET/C#开发工程师们能够愉悦的使用本类库。
 
