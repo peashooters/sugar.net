@@ -32,33 +32,5 @@ namespace Sugar.NetCore
             else
                 return Convert.ToInt64(timespan.TotalMilliseconds);
         }
-
-        ///// <summary>
-        ///// netstandard1_1
-        ///// </summary>
-        ///// <param name="value"></param>
-        ///// <returns></returns>
-        //public static string ToChineseDateTimeString(this DateTime value)
-        //{
-        //    return value.ToString("yyyy年MM月dd日 HH时mm分ss秒");
-        //}
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <param name="value"></param>
-        ///// <returns></returns>
-        //public static string ToChineseDateString(this DateTime value)
-        //{
-        //    return value.ToString("yyyy年MM月dd日");
-        //}
-        ///// <summary>
-        ///// 
-        ///// </summary>
-        ///// <param name="value"></param>
-        ///// <returns></returns>
-        //public static string ToChineseTimeString(this DateTime value)
-        //{
-        //    return value.ToString("HH时mm分ss秒");
-        //}
     }
 }

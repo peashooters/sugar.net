@@ -1,4 +1,16 @@
 ﻿ver
+    1.0.5
+feat (2021-07-05)
+    1.更新NetHttp类，新增HttpGet、HttpPost、HttpGetAsync、HttpPostAsync方法
+    2.新增NetEncrypt类，新增MD5To16、MD5To32方法
+========================================================================
+ver
+    1.0.4
+feat (2021-07-02)
+    1.更新ExtString类，新增RandomString方法,新增GUID、UNID属性
+    2.新增NetDateTime类，新增ToDateTime、ToTimeStamp方法
+========================================================================
+ver
     1.0.3
 feat (2021-06-10)
     1.新增.NET Framework 4.6 、.NET Framework 4.7、.NET Framework 4.8 、NET Standard 1.x编译包

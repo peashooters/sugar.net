@@ -7,7 +7,7 @@ namespace Sugar.NetCore.NetUnit
         static void Main(string[] args)
         {
             //针对xxx进行单元测试
-            var type = typeof(ExtDateTimeUnitTest);
+            var type = typeof(NetHttpUnitTest);
             //var type = typeof(ExtStringUnitTest);
             //var type = typeof(ExtEnumUnitTest);
             Console.WriteLine("执行单元测试：{0}", type.Name);

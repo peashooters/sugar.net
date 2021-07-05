@@ -1,15 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
     <TargetFrameworks>netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;NET40;NET45;NET46;NET47;NET48</TargetFrameworks>
+    <!--<TargetFrameworks>netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;NET40;NET45;NET46;NET47;NET48</TargetFrameworks>-->
     <Description>.NET 函数扩展/语法糖/工具类</Description>
-    <Version>1.0.3</Version>
+    <Version>1.0.5</Version>
     <Authors>peashooters</Authors>
     <Company>peashooters</Company>
     <Product>Sugar.NetCore</Product>
-    <PackageTags>Sugar.NetCore</PackageTags>
+    <PackageTags>sugar.netcore,sugar.net</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <NeutralLanguage></NeutralLanguage>
+    <PackageProjectUrl>https://github.com/peashooters/sugar.net</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,9 +24,28 @@
     <Compile Remove="Enum\DateFormat.cs" />
     <Compile Remove="Enum\TimeFormat.cs" />
     <Compile Remove="Utils\HttpUtils.cs" />
+    <Compile Remove="Utils\NetNumber.cs" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'NET45'">
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'NET46'">
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'NET47'">
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'NET48'">
     <PackageReference Include="System.Net.Http">
       <Version>4.3.4</Version>
     </PackageReference>
@@ -34,10 +55,6 @@
     <PackageReference Include="Microsoft.Bcl.Async">
       <Version>1.0.168</Version>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Utils\" />
   </ItemGroup>
   
 </Project>
