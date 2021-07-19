@@ -1,6 +1,4 @@
-﻿#if NETSTANDARD1_0 || NETSTANDARD1_1 || NETSTANDARD1_2
-    //.NET Standard 1.3以下版本不支持
-#else
+﻿#if NETSTANDARD1_3 || NETSTANDARD1_4 || NETSTANDARD1_5 || NETSTANDARD1_6 || NETSTANDARD2_0 || NETSTANDARD2_1 || NET40 || NET45 || NET46 || NET47 || NET48
 using System.Security.Cryptography;
 using System.Text;
 

@@ -13,7 +13,7 @@ namespace Sugar.NetCore.NetCoreUnit
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 #endif
             //针对xxx进行单元测试
-            var type = typeof(NetHttpUnitTest);
+            var type = typeof(NetEnumUnitTest);
             Console.WriteLine("执行单元测试：{0}", type.Name);
             Console.WriteLine();
 

@@ -13,6 +13,12 @@ namespace Sugar.NetCore.NetCoreUnit
             Console.WriteLine("RandomString（Characters）：{0}", NetString.RandomString(1, 10, StringRandomRule.Characters));
             Console.WriteLine("RandomString（Number）：{0}", NetString.RandomString(1, 10, StringRandomRule.Number));
             Console.WriteLine("RandomString（NumbersAndCharacters）：{0}", NetString.RandomString(1, 10, StringRandomRule.NumbersAndCharacters));
+            Console.WriteLine("RandomString（Normal）：{0}", NetString.RandomString(10, StringRandomRule.Normal));
+            Console.WriteLine();
+            Console.WriteLine("RandomNumber（10）：{0}", NetString.RandomNumber(10));
+            Console.WriteLine("RandomNumber（1-10）：{0}", NetString.RandomNumber(1, 10));
+            Console.WriteLine("RandomCharacters（10）：{0}", NetString.RandomCharacters(10));
+            Console.WriteLine("RandomCharacters（1-10）：{0}", NetString.RandomCharacters(1, 10));
         }
     }
 }

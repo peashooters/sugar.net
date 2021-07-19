@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Sugar.NetCore
 {
-    public static class NetString
+    public class NetString
     {
         #region ====属性（property）
         /// <summary>
@@ -88,6 +88,53 @@ namespace Sugar.NetCore
             }
 
             return builder.ToString();
+        }
+        /// <summary>
+        /// 生成随机字符串（Generate random strings）
+        /// </summary>
+        /// <param name="length">长度</param>
+        /// <param name="rule">生成规则</param>
+        /// <returns></returns>
+        public static string RandomString(int length, StringRandomRule rule = StringRandomRule.Normal)
+        {
+            return RandomString(length, length, rule);
+        }
+        /// <summary>
+        /// 生成随机数字（Generate random numbers）
+        /// </summary>
+        /// <param name="minlength">最小长度</param>
+        /// <param name="maxlength">最大长度</param>
+        /// <returns></returns>
+        public static string RandomNumber(int minlength, int maxlength)
+        {
+            return RandomString(minlength, maxlength, StringRandomRule.Number);
+        }
+        /// <summary>
+        /// 生成随机数字（Generate random numbers）
+        /// </summary>
+        /// <param name="length">长度</param>
+        /// <returns></returns>
+        public static string RandomNumber(int length)
+        {
+            return RandomString(length, length, StringRandomRule.Number);
+        }
+        /// <summary>
+        /// 生成随机英文字符（Generate random characters）
+        /// </summary>
+        /// <param name="minlength">最小长度</param>
+        /// <param name="maxlength">最大长度</param>
+        /// <returns></returns>
+        public static string RandomCharacters(int minlength, int maxlength)
+        {
+            return RandomString(minlength, maxlength, StringRandomRule.Characters);
+        }
+        /// <summary>
+        /// 生成随机英文字符（Generate random characters）
+        /// </summary>
+        /// <param name="length">长度</param>
+        public static string RandomCharacters(int length)
+        {
+            return RandomString(length, length, StringRandomRule.Characters);
         }
     }
 }

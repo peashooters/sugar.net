@@ -5,7 +5,7 @@ namespace Sugar.NetCore
     /// <summary>
     /// 时间帮助类（DateTime Helper）
     /// </summary>
-    public static class NetDateTime
+    public class NetDateTime
     {
         #region ====属性（property）
         /// <summary>

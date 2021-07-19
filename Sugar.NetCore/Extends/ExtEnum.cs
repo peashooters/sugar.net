@@ -21,7 +21,6 @@ namespace Sugar.NetCore
    
             return Convert.ToInt32(value);
         }
-
         /// <summary>
         /// 获取特性 (DisplayAttribute) 的说明，如果未使用该特性，则返回String.Empty（Gets the description of the attribute (displayattribute); if not used, returns String.Empty）
         /// </summary>
@@ -42,5 +41,6 @@ namespace Sugar.NetCore
 #endif
             return (attrs != null && attrs.Length > 0) ? attrs[0].Description : string.Empty;
         }
+        
     }
 }

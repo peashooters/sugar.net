@@ -20,7 +20,7 @@ namespace Sugar.NetCore
     /// <summary>
     /// Http帮助类（Http Helper）
     /// </summary>
-    public static class NetHttp
+    public class NetHttp
     {
         #region ====属性（property）
         /// <summary>

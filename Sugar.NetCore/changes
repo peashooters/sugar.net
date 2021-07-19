@@ -1,4 +1,13 @@
 ﻿ver
+    1.0.6
+feat (2021-07-19)
+    1、更新ExtString类，新增RandomNumber、RandomCharacters方法
+    2、新增NetEnum类，新增ToInt32、GetDescription、GetItems方法
+    3、新增许可协议
+fix
+    1、修复函数没有注释问题
+========================================================================
+ver
     1.0.5
 feat (2021-07-05)
     1.更新NetHttp类，新增HttpGet、HttpPost、HttpGetAsync、HttpPostAsync方法
