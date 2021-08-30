@@ -2,6 +2,9 @@
 
 namespace Sugar.NetCore
 {
+    /// <summary>
+    /// SugarException类（Sugar.NetCore.SugarException）
+    /// </summary>
     public class SugarException : Exception
     {
         /// <summary>

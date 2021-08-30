@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Sugar.NetCore
 {
+    /// <summary>
+    /// 枚举帮助类（Enum Helper）
+    /// </summary>
     public class NetEnum
     {
         /// <summary>

@@ -1,4 +1,23 @@
 ﻿ver
+    1.0.9
+feat (2021-08-30)
+    1、规划：图片转换、ip转int
+========================================================================
+ver
+    1.0.8
+feat (2021-08-30)
+    1、更新ExtString类，新增ToBase64、FromBase64、ToInt64FromIp、ToIpFromInt64、ToUInt32FromIp、ToIpFromUInt32方法
+========================================================================
+ver
+    1.0.7
+feat (2021-07-26)
+    1、新增NetRMB类，新增ToChineseText方法,将数字转为人民币大写
+    2、更新ExtString类，新增ToNullIfEmpty方法
+    3、更新NetString类，新增ToEmptyIfNull、ToNullIfEmpty、HasAnyValue、ReplaceFirst、ReplaceLast方法
+fix
+    1、修复函数没有注释问题
+========================================================================
+ver
     1.0.6
 feat (2021-07-19)
     1、更新ExtString类，新增RandomNumber、RandomCharacters方法

@@ -8,8 +8,9 @@ namespace Sugar.NetCore.NetCoreUnit
         {
             string value = null;
             Console.WriteLine("测试value为：(null)");
-            //ToEmptyIfNull
+            //ToEmptyIfNull、ToNullIfEmpty
             Console.WriteLine("ToEmptyIfNull：{0}", value.ToEmptyIfNull());
+            Console.WriteLine("ToNullIfEmpty：{0}", value.ToNullIfEmpty());
             //IsNullOrWhiteSpace
             Console.WriteLine("IsNullOrWhiteSpace：{0}", value.IsNullOrWhiteSpace());
             //HasAnyValue
@@ -18,6 +19,9 @@ namespace Sugar.NetCore.NetCoreUnit
 
             value = "    ";
             Console.WriteLine($"测试value为：({value})");
+            //ToEmptyIfNull、ToNullIfEmpty
+            Console.WriteLine("ToEmptyIfNull：{0}", value.ToEmptyIfNull());
+            Console.WriteLine("ToNullIfEmpty：{0}", value.ToNullIfEmpty());
             //IsNullOrWhiteSpace
             Console.WriteLine("IsNullOrWhiteSpace：{0}", value.IsNullOrWhiteSpace());
             //HasAnyValue
@@ -27,6 +31,9 @@ namespace Sugar.NetCore.NetCoreUnit
             //HasAnyValue
             value = "    a    ";
             Console.WriteLine($"测试value为：({value})");
+            //ToEmptyIfNull、ToNullIfEmpty
+            Console.WriteLine("ToEmptyIfNull：{0}", value.ToEmptyIfNull());
+            Console.WriteLine("ToNullIfEmpty：{0}", value.ToNullIfEmpty());
             //IsNullOrWhiteSpace
             Console.WriteLine("IsNullOrWhiteSpace：{0}", value.IsNullOrWhiteSpace());
             //HasAnyValue

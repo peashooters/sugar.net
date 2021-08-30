@@ -18,6 +18,15 @@ namespace Sugar.NetCore
             return string.IsNullOrWhiteSpace(value) ? string.Empty : value;
         }
         /// <summary>
+        /// 如果当前字符串实例为空白字符串，则将其转换为null（If the current string instance is whitespace or empty, it is converted to null）
+        /// </summary>
+        /// <param name="value">字符串</param>
+        /// <returns></returns>
+        public static string ToNullIfEmpty(this String value)
+        {
+            return string.IsNullOrWhiteSpace(value) ? null : value;
+        }
+        /// <summary>
         /// 指示当前字符串实例是null、空还是仅由空格字符组成（Indicates whether the current string instance is null, empty, or only composed of space characters）
         /// </summary>
         /// <param name="value">字符串</param>

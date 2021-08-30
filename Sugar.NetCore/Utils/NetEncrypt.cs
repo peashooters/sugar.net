@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Sugar.NetCore
 {
+    /// <summary>
+    /// 加密帮助类（Encrypt Helper）
+    /// </summary>
     public class NetEncrypt
     {
 #region ====private functions

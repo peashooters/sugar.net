@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sugar.NetCore</name>
+    </assembly>
+    <members>
+        <member name="T:Sugar.NetCore.StringRandomRule">
+            <summary>
+            字符串随机规则（String Random Rule）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.StringRandomRule.Normal">
+            <summary>
+            由数字、英文字符、特殊字符组成随机字符串（Numbers And Characters And Special characters）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.StringRandomRule.Number">
+            <summary>
+            由数字组成随机字符串（Number）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.StringRandomRule.Characters">
+            <summary>
+            由英文字符组成随机字符串（Characters）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.StringRandomRule.NumbersAndCharacters">
+            <summary>
+            由数字、英文字符组成随机字符串（Numbers And Characters）
+            </summary>
+        </member>
+        <member name="T:Sugar.NetCore.TimeStampUnit">
+            <summary>
+            时间戳单位（TimeStamp Unit）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.TimeStampUnit.Second">
+            <summary>
+            秒
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.TimeStampUnit.MilliSecond">
+            <summary>
+            毫秒
+            </summary>
+        </member>
+        <member name="T:Sugar.NetCore.ExtDateTime">
+            <summary>
+            时间扩展（DateTime Extension）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.ExtDateTime._unix_init_time">
+            <summary>
+            时间戳计算起始时间
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.ExtDateTime.ToUtcTimeStamp(System.DateTime,Sugar.NetCore.TimeStampUnit)">
+            <summary>
+            获取当前DateTime实例的时间戳（Gets the timestamp of the current time instance）
+            </summary>
+            <param name="value"></param>
+            <param name="unit">精确单位</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.ExtEnum">
+            <summary>
+            枚举扩展（Enum Extension）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.ExtEnum.ToInt32(System.Enum)">
+            <summary>
+            将当前枚举实例转为int32（Converts the current enumeration instance to int）
+            </summary>
+            <param name="value">枚举</param>
+        </member>
+        <member name="M:Sugar.NetCore.ExtEnum.GetDescription(System.Enum)">
+            <summary>
+            获取特性 (DisplayAttribute) 的说明，如果未使用该特性，则返回String.Empty（Gets the description of the attribute (displayattribute); if not used, returns String.Empty）
+            </summary>
+            <param name="value">枚举</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.ExtString">
+            <summary>
+            字符串扩展（String Extension）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.ExtString.ToEmptyIfNull(System.String)">
+            <summary>
+            如果当前字符串实例为null，则将其转换为string.Empty（If the current string instance is null, it is converted to string.Empty）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.ExtString.ToNullIfEmpty(System.String)">
+            <summary>
+            如果当前字符串实例为空白字符串，则将其转换为null（If the current string instance is whitespace or empty, it is converted to null）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.ExtString.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            指示当前字符串实例是null、空还是仅由空格字符组成（Indicates whether the current string instance is null, empty, or only composed of space characters）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.ExtString.HasAnyValue(System.String)">
+            <summary>
+            指示当前字符串中是否存在任何值（Indicates whether any value exists in the current string）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.ExtString.ReplaceFirst(System.String,System.String,System.String)">
+            <summary>
+            返回一个新字符串，其中指定的Unicode字符在此实例中的第一个匹配项被另一个指定的Unicode字符替换（Returns a new string in which the first occurrence of the specified Unicode character in this instance is replaced by another specified Unicode character）
+            </summary>
+            <param name="value">字符串</param>
+            <param name="oldValue">要替换的Unicode字符（The Unicode character to be replaced）</param>
+            <param name="newValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.ExtString.ReplaceLast(System.String,System.String,System.String)">
+            <summary>
+            返回一个新字符串，其中指定的Unicode字符在此实例中的最后一个匹配项被另一个指定的Unicode字符替换（Returns a new string in which the last occurrence of the specified Unicode character in this instance is replaced by another specified Unicode character）
+            </summary>
+            <param name="value">字符串</param>
+            <param name="oldValue">要替换的Unicode字符（The Unicode character to be replaced）</param>
+            <param name="newValue">用于替换第一个匹配oldchar的Unicode字符（The Unicode character used to replace the first matching oldchar）</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.DescriptionAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.DescriptionAttribute.description">
+            <summary>
+            描述文本（The description text）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.DescriptionAttribute.Default">
+            <summary>
+            指定System.ComponentModel.DescriptionAttribute的默认值，该值为空字符串。此静态字段是只读的（Specifies the default value for the System.ComponentModel.DescriptionAttribute,which is an empty string (""). This static field is read-only）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.DescriptionAttribute.#ctor">
+            <summary>
+            初始化System.ComponentModel.DescriptionAttribute类的新实例（Initializes a new instance of the System.ComponentModel.DescriptionAttribute class with no parameters）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.DescriptionAttribute.#ctor(System.String)">
+            <summary>
+            初始化System.ComponentModel.DescriptionAttribute类的新实例（Initializes a new instance of the System.ComponentModel.DescriptionAttribute class with a description）
+            </summary>
+            <param name="description">描述文本（The description text）</param>
+        </member>
+        <member name="P:Sugar.NetCore.DescriptionAttribute.Description">
+            <summary>
+            获取存储在此属性中的描述（Gets the description stored in this attribute）
+            </summary>
+        </member>
+        <member name="P:Sugar.NetCore.DescriptionAttribute.DescriptionValue">
+            <summary>
+            获取或设置存储为描述的字符串（Gets or sets the string stored as the description）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.DescriptionAttribute.Equals(System.Object)">
+            <summary>
+            （Returns whether the value of the given object is equal to the current System.ComponentModel.DescriptionAttribute）
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.DescriptionAttribute.GetHashCode">
+            <summary>
+            （Returns the hash code for this instance）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.DescriptionAttribute.IsDefaultAttribute">
+            <summary>
+             （Returns a value indicating whether this is the default System.ComponentModel.DescriptionAttribute instance）   
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.EnumItem">
+            <summary>
+            枚举项
+            </summary>
+        </member>
+        <member name="P:Sugar.NetCore.EnumItem.Desction">
+            <summary>  
+            枚举的描述  
+            </summary>  
+        </member>
+        <member name="P:Sugar.NetCore.EnumItem.Key">
+            <summary>  
+            枚举名称  
+            </summary>  
+        </member>
+        <member name="P:Sugar.NetCore.EnumItem.Value">
+            <summary>  
+            枚举对象的值
+            </summary>  
+        </member>
+        <member name="T:Sugar.NetCore.SugarException">
+            <summary>
+            SugarException类（Sugar.NetCore.SugarException）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.SugarException.#ctor">
+            <summary>
+            初始化Sugar.NetCore.SugarException类的新实例（Initializes a new instance of the Sugar.NetCore.SugarException class）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.SugarException.#ctor(System.String)">
+            <summary>
+            使用指定的错误消息初始化Sugar.NetCore.SugarException类的新实例（ Initializes a new instance of the Sugar.NetCore.SugarException class with a specified error message）
+            </summary>
+            <param name="message">异常消息（The message that describes the error）</param>
+        </member>
+        <member name="M:Sugar.NetCore.SugarException.#ctor(System.String,System.Exception)">
+            <summary>
+            初始化Sugar.NetCore.SugarException类的新实例，其中包含指定的错误消息和对导致此异常的内部异常的引用（Initializes a new instance of the Sugar.NetCore.SugarException class with a specified error message and a reference to the inner exception that is the cause of this exception）
+            </summary>
+            <param name="message">异常消息（The error message that explains the reason for the exception）</param>
+            <param name="innerException">内部异常实例（The exception that is the cause of the current exception, or a null reference if no inner exception is specified）</param>
+        </member>
+        <member name="T:Sugar.NetCore.NetDateTime">
+            <summary>
+            时间帮助类（DateTime Helper）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetDateTime._unix_init_time">
+            <summary>
+            时间戳起始时间
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.NetDateTime.ToTimeStamp(System.DateTime,Sugar.NetCore.TimeStampUnit)">
+            <summary>
+            时间转为时间戳（datetime to timestamp）
+            </summary>
+            <param name="value">时间</param>
+            <param name="unit">单位</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetDateTime.ToDateTime(System.Int64)">
+            <summary>
+            时间戳转为时间（timestamp to datetime）
+            </summary>
+            <param name="value">时间戳</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetDateTime.ToDateTime(System.String)">
+            <summary>
+            时间戳转为时间（timestamp to datetime）
+            </summary>
+            <param name="value">时间戳</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.NetEnum">
+            <summary>
+            枚举帮助类（Enum Helper）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.NetEnum.ToInt32(System.Enum)">
+            <summary>
+            将当前枚举实例转为int32（Converts the current enumeration instance to int）
+            </summary>
+            <param name="value">枚举</param>
+        </member>
+        <member name="M:Sugar.NetCore.NetEnum.GetDescription(System.Enum)">
+            <summary>
+            获取特性 (DisplayAttribute) 的说明，如果未使用该特性，则返回String.Empty（Gets the description of the attribute (displayattribute); if not used, returns String.Empty）
+            </summary>
+            <param name="value">枚举</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetEnum.GetItems``1">
+            <summary>
+            获取枚举项
+            </summary>
+            <typeparam name="T">枚举泛型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.NetHttp">
+            <summary>
+            Http帮助类（Http Helper）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetHttp._defaultTimeOut">
+            <summary>
+            默认超时时间（Default Timeout）
+            </summary>
+        </member>
+        <member name="T:Sugar.NetCore.NetRMB">
+            <summary>
+            人民币（RMB）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetRMB._chinese_numerals">
+            <summary>
+            中文（基础）数字
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetRMB._chinese_numerals_unit">
+            <summary>
+            中文数字单位
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetRMB.MaxValue">
+            <summary>
+            允许转换的最大值
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetRMB.MinValue">
+            <summary>
+            允许转换的最小值
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ConvertIntegerPart(System.String)">
+            <summary>
+            转换整数部分（Convert integer part）
+            </summary>
+            <param name="integer">整数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ConvertDecimalPart(System.String)">
+            <summary>
+            转换小数部分（Convert decimal part）
+            </summary>
+            <param name="decimalNumber">小数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ArabicNumeralsToChineseNumerals(System.Char)">
+            <summary>
+            阿拉伯（基础）数字转中文（基础）数字 （Arabic numerals To Chinese numerals）
+            </summary>
+            <param name="numerals">数字</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.GetChineseNumeralsUnit(System.Int32)">
+            <summary>
+            获取中文数字单位
+            </summary>
+            <param name="digit">数字位</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.FixUnit(System.String)">
+            <summary>
+            单位调整
+            </summary>
+            <param name="numerals">数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ToChineseText(System.Decimal)">
+            <summary>
+            转换成人民币大写形式（Convert to RMB in words）
+            </summary>
+            <param name="value">（数字）人民币</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ToChineseText(System.Int32)">
+            <summary>
+            转换成人民币大写形式（Convert to RMB in words）
+            </summary>
+            <param name="value">（数字）人民币</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ToChineseText(System.Int64)">
+            <summary>
+            转换成人民币大写形式（Convert to RMB in words）
+            </summary>
+            <param name="value">（数字）人民币</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetRMB.ToChineseText(System.String)">
+            <summary>
+            转换成人民币大写形式（Convert to RMB in words）
+            </summary>
+            <param name="value">（数字）人民币</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sugar.NetCore.NetString">
+            <summary>
+            字符串帮助类（String Helper）
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetString._number">
+            <summary>
+            数字
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetString._character">
+            <summary>
+            英文
+            </summary>
+        </member>
+        <member name="F:Sugar.NetCore.NetString._special_characters">
+            <summary>
+            特殊字符
+            </summary>
+        </member>
+        <member name="P:Sugar.NetCore.NetString.GUID">
+            <summary>
+            GUID（Globally Unique Identifier）
+            </summary>
+        </member>
+        <member name="P:Sugar.NetCore.NetString.UNID">
+            <summary>
+            UNID，没有分隔符的GUID（Globally Unique Identifier，No Separator）
+            </summary>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.RandomString(System.Int32,System.Int32,Sugar.NetCore.StringRandomRule)">
+            <summary>
+            生成随机字符串（Generate random strings）
+            </summary>
+            <param name="minlength">最小长度</param>
+            <param name="maxlength">最大长度</param>
+            <param name="rule">生成规则</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.RandomString(System.Int32,Sugar.NetCore.StringRandomRule)">
+            <summary>
+            生成随机字符串（Generate random strings）
+            </summary>
+            <param name="length">长度</param>
+            <param name="rule">生成规则</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.RandomNumber(System.Int32,System.Int32)">
+            <summary>
+            生成随机数字（Generate random numbers）
+            </summary>
+            <param name="minlength">最小长度</param>
+            <param name="maxlength">最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.RandomNumber(System.Int32)">
+            <summary>
+            生成随机数字（Generate random numbers）
+            </summary>
+            <param name="length">长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.RandomCharacters(System.Int32,System.Int32)">
+            <summary>
+            生成随机英文字符（Generate random characters）
+            </summary>
+            <param name="minlength">最小长度</param>
+            <param name="maxlength">最大长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.RandomCharacters(System.Int32)">
+            <summary>
+            生成随机英文字符（Generate random characters）
+            </summary>
+            <param name="length">长度</param>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToEmptyIfNull(System.String)">
+            <summary>
+            如果当前字符串实例为null，则将其转换为string.Empty（If the current string instance is null, it is converted to string.Empty）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToNullIfEmpty(System.String)">
+            <summary>
+            如果当前字符串实例为空白字符串，则将其转换为null（If the current string instance is whitespace or empty, it is converted to null）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.HasAnyValue(System.String)">
+            <summary>
+            指示当前字符串中是否存在任何值（Indicates whether any value exists in the current string）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ReplaceFirst(System.String,System.String,System.String)">
+            <summary>
+            返回一个新字符串，其中指定的Unicode字符在此实例中的第一个匹配项被另一个指定的Unicode字符替换（Returns a new string in which the first occurrence of the specified Unicode character in this instance is replaced by another specified Unicode character）
+            </summary>
+            <param name="value">字符串</param>
+            <param name="oldValue">要替换的Unicode字符（The Unicode character to be replaced）</param>
+            <param name="newValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ReplaceLast(System.String,System.String,System.String)">
+            <summary>
+            返回一个新字符串，其中指定的Unicode字符在此实例中的最后一个匹配项被另一个指定的Unicode字符替换（Returns a new string in which the last occurrence of the specified Unicode character in this instance is replaced by another specified Unicode character）
+            </summary>
+            <param name="value">字符串</param>
+            <param name="oldValue">要替换的Unicode字符（The Unicode character to be replaced）</param>
+            <param name="newValue">用于替换第一个匹配oldchar的Unicode字符（The Unicode character used to replace the first matching oldchar）</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
