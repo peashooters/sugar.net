@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sugar.NetCore.NetUnit\Sugar.NetCore.NetUnit.csproj" />
     <ProjectReference Include="..\Sugar.NetCore\Sugar.NetCore.csproj" />
   </ItemGroup>
   
