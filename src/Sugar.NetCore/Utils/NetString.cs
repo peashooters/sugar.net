@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 
 namespace Sugar.NetCore
@@ -43,7 +44,7 @@ namespace Sugar.NetCore
                 return System.Guid.NewGuid().ToString().Replace("-", "");
             }
         }
-
+   
         #region ====随机字符串（RandomString）
         /// <summary>
         /// 生成随机字符串（Generate random strings）
@@ -191,6 +192,15 @@ namespace Sugar.NetCore
             return number;
         }
         /// <summary>
+        /// IP地址转换为Int32（From IP address to Int32）
+        /// </summary>
+        /// <param name="value">ip</param>
+        /// <returns></returns>
+        public static int ToInt32FromIp(string value)
+        {
+            return BitConverter.ToInt32(value.Split('.').Reverse().Select(x => byte.Parse(x)).ToArray(), 0);
+        }
+        /// <summary>
         /// Int64转换为IP地址（From Int64 to IP address）
         /// </summary>
         /// <param name="value">ip</param>
@@ -203,6 +213,30 @@ namespace Sugar.NetCore
             builder.Append(value >> 0x8 & 0xff).Append(".");
             builder.Append(value & 0xff);
             return builder.ToString();
+        }
+        /// <summary>
+        /// Int32转换为IP地址（From Int32 to IP address）
+        /// </summary>
+        /// <param name="value">ip</param>
+        /// <returns></returns>
+        public static string ToIpFromInt32(int value)
+        {
+            int number = value < 0 ? value + 1 : value;
+
+            int str1 = number / 256 / 256 / 256;
+            int str9 = str1 * 256 * 256 * 256;
+            int str2 = (number - str9) / 256 / 256;
+            int str8 = str2 * 256 * 256 + str9;
+            int str3 = (number - str8) / 256;
+            int str4 = number - str3 * 256 - str8;
+            if (value < 0)
+            {
+                str1 = 255 + str1;
+                str2 = 255 + str2;
+                str3 = 255 + str3;
+                str4 = 255 + str4;
+            }
+            return string.Format("{0}.{1}.{2}.{3}", str1, str2, str3, str4);
         }
         /// <summary>
         /// IP地址转换为UInt32（From IP address to UInt32）

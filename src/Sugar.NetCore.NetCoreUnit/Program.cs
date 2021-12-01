@@ -11,7 +11,7 @@ namespace Sugar.NetCore.NetCoreUnit
             //注册编码提供程序
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
             //针对xxx进行单元测试
-            var type = typeof(NetStringUnitTest);
+            var type = typeof(NetIPUnitTest);
             Console.WriteLine("执行单元测试：{0}", type.Name);
             Console.WriteLine();
 

@@ -261,6 +261,34 @@
             <param name="value">时间戳</param>
             <returns></returns>
         </member>
+        <member name="M:Sugar.NetCore.NetDateTime.GetFirstDayOfMonth(System.DateTime)">
+            <summary>
+            获取当月第一天（Get the first day of the month）
+            </summary>
+            <param name="value">时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetDateTime.GetLastDayOfMonth(System.DateTime)">
+            <summary>
+            获取当月最后一天（Get the last day of the month）
+            </summary>
+            <param name="value">时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetDateTime.GetFirstDayOfWeek(System.DateTime)">
+            <summary>
+            获取当周第一天（Get the first day of the week）
+            </summary>
+            <param name="value">时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetDateTime.GetLastDayOfWeek(System.DateTime)">
+            <summary>
+            获取当周最后一天（Get the last day of the week）
+            </summary>
+            <param name="value">时间</param>
+            <returns></returns>
+        </member>
         <member name="T:Sugar.NetCore.NetEnum">
             <summary>
             枚举帮助类（Enum Helper）
@@ -294,6 +322,11 @@
         <member name="F:Sugar.NetCore.NetHttp._defaultTimeOut">
             <summary>
             默认超时时间（Default Timeout）
+            </summary>
+        </member>
+        <member name="T:Sugar.NetCore.NetImage">
+            <summary>
+            图片帮助类（Image Helper）
             </summary>
         </member>
         <member name="T:Sugar.NetCore.NetRMB">
@@ -460,6 +493,21 @@
             </summary>
             <param name="length">长度</param>
         </member>
+        <member name="M:Sugar.NetCore.NetString.ToBase64(System.String)">
+            <summary>
+            使用utf8编码格式将字符串转换为Base64字符串（Converts a string to a Base64 string using utf8 encoding format）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToBase64(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定的编码格式将字符串转换为Base64字符串（Converts a string to a Base64 string using the specified encoding format）
+            </summary>
+            <param name="value">字符串</param>
+            <param name="encoding">编码格式</param>
+            <returns></returns>
+        </member>
         <member name="M:Sugar.NetCore.NetString.ToEmptyIfNull(System.String)">
             <summary>
             如果当前字符串实例为null，则将其转换为string.Empty（If the current string instance is null, it is converted to string.Empty）
@@ -467,11 +515,68 @@
             <param name="value">字符串</param>
             <returns></returns>
         </member>
+        <member name="M:Sugar.NetCore.NetString.ToInt64FromIp(System.String)">
+            <summary>
+            IP地址转换为Int64（From IP address to Int64）
+            </summary>
+            <param name="value">ip</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToInt32FromIp(System.String)">
+            <summary>
+            IP地址转换为Int32（From IP address to Int32）
+            </summary>
+            <param name="value">ip</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToIpFromInt64(System.Int64)">
+            <summary>
+            Int64转换为IP地址（From Int64 to IP address）
+            </summary>
+            <param name="value">ip</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToIpFromInt32(System.Int32)">
+            <summary>
+            Int32转换为IP地址（From Int32 to IP address）
+            </summary>
+            <param name="value">ip</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToUInt32FromIp(System.String)">
+            <summary>
+            IP地址转换为UInt32（From IP address to UInt32）
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.ToIpFromUInt32(System.UInt32)">
+            <summary>
+            UInt32转换为IP地址（From UInt32 to IP address）
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
         <member name="M:Sugar.NetCore.NetString.ToNullIfEmpty(System.String)">
             <summary>
             如果当前字符串实例为空白字符串，则将其转换为null（If the current string instance is whitespace or empty, it is converted to null）
             </summary>
             <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.FromBase64(System.String)">
+            <summary>
+            使用utf8编码格式将Base64字符串转换为字符串（Convert Base64 string to string using utf8 encoding format）
+            </summary>
+            <param name="value">字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sugar.NetCore.NetString.FromBase64(System.String,System.Text.Encoding)">
+            <summary>
+            使用指定的编码格式将Base64字符串转换为字符串（Converts a Base64 string to a string using the specified encoding format）
+            </summary>
+            <param name="value">字符串</param>
+            <param name="encoding">编码格式</param>
             <returns></returns>
         </member>
         <member name="M:Sugar.NetCore.NetString.HasAnyValue(System.String)">

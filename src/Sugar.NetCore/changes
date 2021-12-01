@@ -1,7 +1,14 @@
 ﻿ver
+    1.0.10
+feat (2021-11-30)
+    1、规划：图片转换、图片压缩
+    2、
+========================================================================
+ver
     1.0.9
-feat (2021-08-30)
-    1、规划：图片转换、ip转int
+feat (2021-12-01)
+    1、更新NetString类，新增ToInt32FromIp、ToIpFromInt32方法
+    2、更新NetDateTime类，新增GetFirstDayOfMonth、GetLastDayOfMonth、GetFirstDayOfWeek、GetLastDayOfWeek方法
 ========================================================================
 ver
     1.0.8

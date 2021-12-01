@@ -52,5 +52,51 @@ namespace Sugar.NetCore
         {
             return ToDateTime(Convert.ToInt64(value));
         }
+
+        /// <summary>
+        /// 获取当月第一天（Get the first day of the month）
+        /// </summary>
+        /// <param name="value">时间</param>
+        /// <returns></returns>
+        public static DateTime GetFirstDayOfMonth(DateTime value)
+        {
+            return new DateTime(value.Year, value.Month, 1);
+        }
+        /// <summary>
+        /// 获取当月最后一天（Get the last day of the month）
+        /// </summary>
+        /// <param name="value">时间</param>
+        /// <returns></returns>
+        public static DateTime GetLastDayOfMonth(DateTime value)
+        {
+            var firstDayOfMonth = new DateTime(value.Year, value.Month, 1);
+            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+            return lastDayOfMonth;
+        }
+        /// <summary>
+        /// 获取当周第一天（Get the first day of the week）
+        /// </summary>
+        /// <param name="value">时间</param>
+        /// <returns></returns>
+        public static DateTime GetFirstDayOfWeek(DateTime value)
+        {
+            var week = Convert.ToInt32(value.DayOfWeek);
+            week = (week == 0 ? (7 - 1) : (week - 1));
+            var firstDayOfWeek = value.AddDays((-1) * week);
+            return new DateTime(firstDayOfWeek.Year, firstDayOfWeek.Month, firstDayOfWeek.Day);
+        }
+        /// <summary>
+        /// 获取当周最后一天（Get the last day of the week）
+        /// </summary>
+        /// <param name="value">时间</param>
+        /// <returns></returns>
+        public static DateTime GetLastDayOfWeek(DateTime value)
+        {
+            var week = Convert.ToInt32(value.DayOfWeek);
+            week = week == 0 ? (7 - week) : week;
+            var lastDayOfWeek = value.AddDays(7 - week);
+            return new DateTime(lastDayOfWeek.Year, lastDayOfWeek.Month, lastDayOfWeek.Day);
+        }
+
     }
 }

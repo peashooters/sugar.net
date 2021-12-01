@@ -64,6 +64,12 @@ namespace Sugar.NetCore.NetUnit
             var uip = NetString.ToUInt32FromIp(value);
             Console.WriteLine("ToInt64FromIp：{0}", uip);
             Console.WriteLine("ToIpFromInt64：{0}", NetString.ToIpFromUInt32(uip));
+
+            value = "192.168.1.1";
+            var iip = NetString.ToInt32FromIp(value);
+            Console.WriteLine("ToInt32FromIp：{0}", iip);
+            Console.WriteLine("ToIpFromInt64：{0}", NetString.ToIpFromInt32(iip));
+
         }
     }
 }

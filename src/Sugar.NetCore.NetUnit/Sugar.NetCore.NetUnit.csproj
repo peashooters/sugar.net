@@ -55,6 +55,7 @@
     <Compile Include="Utils\NetEncryptUnitTest.cs" />
     <Compile Include="Utils\NetEnumUnitTest.cs" />
     <Compile Include="Utils\NetHttpUnitTest.cs" />
+    <Compile Include="Utils\NetIPUnitTest.cs" />
     <Compile Include="Utils\NetRMBUnitTest.cs" />
     <Compile Include="Utils\NetStringUnitTest.cs" />
   </ItemGroup>

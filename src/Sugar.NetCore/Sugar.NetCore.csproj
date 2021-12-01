@@ -5,7 +5,7 @@
     <!--<TargetFrameworks>netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netstandard2.1;NET40;NET45;NET46;NET47;NET48</TargetFrameworks>-->
     <Description>.NET 函数扩展/语法糖/工具类</Description>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <Authors>peashooters</Authors>
     <Company>peashooters</Company>
     <Product>Sugar.NetCore</Product>
@@ -106,6 +106,10 @@
     <PackageReference Include="Microsoft.Bcl.Async">
       <Version>1.0.168</Version>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Sugar.NetCore.xml" />
   </ItemGroup>
   
 </Project>
